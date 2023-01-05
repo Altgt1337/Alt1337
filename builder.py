@@ -71,7 +71,7 @@ class make_env:
 
     def get_src(self) -> None:
         subprocess.run(['git', 'clone', 'https://github.com/Altgt1337/Alt1337.git'], cwd=self.build_dir)
-        shutil.move(os.path.join(self.build_dir, 'empyrean', 'src'), self.build_dir)
+        shutil.move(os.path.join(self.build_dir, 'ALT1337', 'src'), self.build_dir)
 
 class write_config:
     def __init__(self, config: dict) -> None:

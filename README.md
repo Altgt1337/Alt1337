@@ -68,7 +68,7 @@
 <br>
 
 ```bash
-git clone https://github.com/addi00000/ALT1337.git
+git clone https://github.com/Altgt1337/ALT1337.git
 cd ALT1337
 ./build.bat
 ```
